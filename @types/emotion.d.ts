@@ -2,14 +2,12 @@ import '@emotion/react';
 
 declare module '@emotion/react' {
   export interface Color {
-    color: {
-      primary: string;
-      background: string;
-      backgroundCon: string;
-      text: string;
-      textCon: string;
-      hover: string;
-    };
+    primary: string;
+    background: string;
+    backgroundCon: string;
+    text: string;
+    textCon: string;
+    hover: string;
   }
 
   export interface Size {
@@ -20,7 +18,8 @@ declare module '@emotion/react' {
     header: string;
   }
 
-  export interface Theme extends Color {
+  export interface Theme {
+    color: Color;
     size: Size;
   }
 
