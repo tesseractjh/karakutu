@@ -15,8 +15,10 @@ const resetStyle = css`
   }
 
   button {
-    background: none;
+    padding: 0;
+    margin: 0;
     border: none;
+    background: none;
   }
 `;
 

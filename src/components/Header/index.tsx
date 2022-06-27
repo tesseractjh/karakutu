@@ -45,6 +45,8 @@ const MenuButton = styled.button`
   }
 
   & .icon-mode {
+    width: ${pxToRem(20)};
+    height: ${pxToRem(20)};
     fill: ${({ theme }) => theme.color.text};
   }
 `;
