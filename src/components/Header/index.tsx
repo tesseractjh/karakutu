@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import pxToRem from '@src/utils/pxToRem';
-import { flex } from '@styles/mixins';
+import { color, size, flex } from '@styles/mixins';
 import SunIcon from '@assets/images/sun-solid.svg';
 import MoonIcon from '@assets/images/moon-solid.svg';
 import useMode from '@src/hooks/useMode';
@@ -16,16 +16,16 @@ interface ModeIconProps {
 
 const StyledHeader = styled.header`
   ${flex('space-between')}
-  height: ${({ theme }) => theme.size.header};
+  height: ${size('header')};
   padding: ${pxToRem(0, 40)};
   margin: 0 auto;
-  background-color: ${({ theme }) => theme.color.backgroundCon};
+  background-color: ${color('backgroundCon')};
 `;
 
 const Title = styled.h1`
   font-weight: 700;
   font-size: ${pxToRem(36)};
-  color: ${({ theme }) => theme.color.textCon};
+  color: ${color('textCon')};
 `;
 
 const Menu = styled.ul`
@@ -37,17 +37,17 @@ const MenuButton = styled.button`
   width: ${pxToRem(32)};
   height: ${pxToRem(32)};
   border-radius: 50%;
-  background-color: ${({ theme }) => theme.color.background};
+  background-color: ${color('background')};
   cursor: pointer;
 
   &:hover {
-    background-color: ${({ theme }) => theme.color.hover};
+    background-color: ${color('hover')};
   }
 
   & .icon-mode {
     width: ${pxToRem(20)};
     height: ${pxToRem(20)};
-    fill: ${({ theme }) => theme.color.text};
+    fill: ${color('text')};
   }
 `;
 
