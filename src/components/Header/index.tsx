@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import pxToRem from '@src/utils/pxToRem';
-import { color, size, flex } from '@styles/mixins';
+import { color, size, flex, border } from '@styles/mixins';
 import SunIcon from '@assets/images/sun-solid.svg';
 import MoonIcon from '@assets/images/moon-solid.svg';
 import useMode from '@src/hooks/useMode';
@@ -19,6 +19,7 @@ const StyledHeader = styled.header`
   height: ${size('header')};
   padding: ${pxToRem(0, 40)};
   margin: 0 auto;
+  border-bottom: ${border()} ${color('border')};
   background-color: ${color('backgroundCon')};
 `;
 

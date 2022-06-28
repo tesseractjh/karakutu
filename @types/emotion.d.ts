@@ -8,6 +8,7 @@ declare module '@emotion/react' {
     text: string;
     textCon: string;
     hover: string;
+    border: string;
   }
 
   export interface Size {

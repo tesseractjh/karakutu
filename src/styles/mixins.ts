@@ -19,3 +19,6 @@ export const flex = (
   justify-content: ${justifyContent ?? 'center'};
   align-items: ${alignItems ?? 'center'};
 `;
+
+export const border = (width?: number | string | null, style?: string | null) =>
+  `${pxToRem(width ?? 1)} ${style ?? 'solid'}`;

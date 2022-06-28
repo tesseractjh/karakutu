@@ -39,7 +39,8 @@ const lightTheme: Theme = {
     backgroundCon: palette.GRAY800,
     text: palette.BLACK,
     textCon: palette.GRAY100,
-    hover: palette.GRAY400
+    hover: palette.GRAY400,
+    border: palette.GRAY200
   },
   size
 };
@@ -51,7 +52,8 @@ const darkTheme: Theme = {
     backgroundCon: palette.BLACK,
     text: palette.WHITE,
     textCon: palette.GRAY100,
-    hover: palette.GRAY700
+    hover: palette.GRAY700,
+    border: palette.GRAY600
   },
   size
 };
