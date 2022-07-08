@@ -5,7 +5,7 @@ declare global {
   type ThemeName = 'LIGHT' | 'DARK';
 
   interface Props {
-    children: React.ReactNode;
+    children?: React.ReactNode;
   }
 }
 
