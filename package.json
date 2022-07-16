@@ -48,6 +48,7 @@
     "jest": "^28.1.1",
     "jest-environment-jsdom": "^28.1.1",
     "jest-svg-transformer": "^1.0.0",
+    "jest-transformer-svg": "^2.0.0",
     "nanoid": "^4.0.0",
     "prettier": "^2.7.0",
     "react-refresh": "^0.14.0",
