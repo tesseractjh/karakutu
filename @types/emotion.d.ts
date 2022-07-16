@@ -3,11 +3,16 @@ import '@emotion/react';
 declare module '@emotion/react' {
   export interface Color {
     primary: string;
+    primaryLight: string;
+    primaryDark: string;
     background: string;
+    backgroundLight: string;
     backgroundCon: string;
     text: string;
+    textLight: string;
     textCon: string;
     hover: string;
+    hoverLight: string;
     border: string;
   }
 

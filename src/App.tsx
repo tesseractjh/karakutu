@@ -1,7 +1,8 @@
-import Header from '@src/components/Header';
-import ThemeProvider from '@contexts/ThemeProvider';
-import GlobalStyle from '@styles/GlobalStyle';
 import styled from '@emotion/styled';
+import GlobalStyle from '@styles/GlobalStyle';
+import ThemeProvider from '@contexts/ThemeProvider';
+import Header from '@components/Header';
+import Section from '@components/Section';
 
 const Container = styled.div`
   width: 100vw;
@@ -17,6 +18,7 @@ function App() {
       <ThemeProvider>
         <Container>
           <Header />
+          <Section />
         </Container>
       </ThemeProvider>
     </>

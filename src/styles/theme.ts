@@ -35,11 +35,16 @@ const size: Size = {
 const lightTheme: Theme = {
   color: {
     primary: palette.RED300,
+    primaryLight: palette.RED100,
+    primaryDark: palette.RED600,
     background: palette.GRAY100,
+    backgroundLight: palette.WHITE,
     backgroundCon: palette.GRAY800,
     text: palette.BLACK,
+    textLight: palette.GRAY300,
     textCon: palette.GRAY100,
     hover: palette.GRAY400,
+    hoverLight: palette.GRAY200,
     border: palette.GRAY200
   },
   size
@@ -47,12 +52,17 @@ const lightTheme: Theme = {
 
 const darkTheme: Theme = {
   color: {
-    primary: palette.RED300,
+    primary: palette.RED400,
+    primaryLight: palette.RED600,
+    primaryDark: palette.RED100,
     background: palette.GRAY900,
+    backgroundLight: palette.GRAY800,
     backgroundCon: palette.BLACK,
     text: palette.WHITE,
+    textLight: palette.GRAY400,
     textCon: palette.GRAY100,
     hover: palette.GRAY700,
+    hoverLight: palette.GRAY500,
     border: palette.GRAY600
   },
   size
