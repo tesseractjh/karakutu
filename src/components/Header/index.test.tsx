@@ -1,7 +1,7 @@
 import App from '@src/App';
 import { render, fireEvent } from '@testing-library/react';
 
-describe('useMode Hook', () => {
+describe('Dark Mode Button', () => {
   it('localStorage', () => {
     window.localStorage.setItem('themeMode', 'DARK');
     const { getByRole } = render(<App />);
