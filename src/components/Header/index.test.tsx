@@ -1,6 +1,11 @@
 import App from '@src/App';
 import { render, fireEvent } from '@testing-library/react';
 
+jest.mock('nanoid', () => {
+  let count = 0;
+  return { nanoid: () => count++ };
+});
+
 describe('Dark Mode Button', () => {
   it('localStorage', () => {
     window.localStorage.setItem('themeMode', 'DARK');
